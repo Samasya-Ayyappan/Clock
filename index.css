@@ -1,0 +1,222 @@
+.below {
+    width: 300px;
+    height: 300px;
+    border: 5px solid rgba(111, 57, 4, 0.841);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    color: rgba(111, 57, 4, 0.841);
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    z-index: 1;
+}
+
+.Whole_Clock {
+    position: relative;
+    height: 310px;
+    width: 310px;
+}
+
+.above {
+    position: absolute;
+    z-index: 2;
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+}
+
+.One {
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 47%;
+    rotate: 90deg;
+    z-index: 1;
+    margin: 0px;
+}
+
+.One div {
+    rotate: 270deg;
+}
+
+.Two {
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 47%;
+    rotate: 120deg;
+    z-index: 2;
+}
+
+.Two div {
+    rotate: 240deg;
+}
+
+.Three {
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 47%;
+    rotate: 150deg;
+    z-index: 3;
+}
+
+.Three div {
+    rotate: 210deg;
+}
+
+.Four {
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 47%;
+    rotate: 180deg;
+    z-index: 4;
+}
+
+.Four div {
+    rotate: 180deg;
+}
+
+.Five {
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 47%;
+    rotate: 210deg;
+    z-index: 5;
+}
+
+.Five div {
+    rotate: 150deg;
+}
+
+.Six {
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 47%;
+    rotate: 240deg;
+    z-index: 6;
+}
+
+.Six div {
+    rotate: 120deg;
+}
+
+
+#Hour {
+    padding: 1px 0px;
+    width: 50%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    height: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    left: 25%;
+    rotate: 90deg;
+    z-index:1;
+}
+
+#Hour::before {
+    content: "";
+    padding: 2% 25%;
+    font-size: 0px;
+    background-color: rgb(63, 62, 62);
+    justify-content:center ;
+}
+
+#Minute {
+    padding: 1px 0px;
+    width: 70%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    height: 0px;
+    align-items: center;
+    left: 15%;
+    justify-content: flex-start;
+    z-index: 2;
+    rotate: 90deg;
+}
+
+#Minute::before {
+    content: "";
+    padding: 1.5% 25%;
+    font-size: 0px;
+    background-color:rgb(41, 39, 39);
+}
+
+#Second {
+    padding: 1px 0px;
+    width: 70%;
+    float: right;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    height: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    left: 15%;
+    z-index: 3;
+    rotate: 90deg;
+}
+
+#Second::before {
+    content: "";
+    padding: 0.75% 25%;
+    font-size: 0px;
+    background-color: rgb(59, 59, 59);
+}
+
+#dot {
+    padding: 1px 0px;
+    width: 52%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    height: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 4;
+}
+
+#dot::before {
+    content: "";
+    padding: 4%;
+    border-radius: 50%;
+    font-size: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    padding: 20px 0px;
+}
+
+h3 {
+    padding: 20px 20px;
+    font-size: 28px;
+    border: 5px groove rgba(111, 57, 4, 0.841);
+    width: 200px;
+}
